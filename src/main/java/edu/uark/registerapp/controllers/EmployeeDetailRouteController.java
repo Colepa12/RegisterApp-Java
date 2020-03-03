@@ -14,12 +14,12 @@ import org.springframework.web.bind.annotation.RequestParam;
 @RequestMapping(value = "/employeeDetail")
 public class EmployeeDetailRouteController
 {
-    // @RequestMapping(method = RequestMethod.GET)
-    // public ModelAndView start(
-    //     @RequestParam final Map<String, String> queryParameters, 
-    //     final HttpServletRequest request)
-    // {
-        
-    // }
+    @RequestMapping(method = RequestMethod.GET)
+    public ModelAndView start(
+        @RequestParam final Map<String, String> queryParameters, 
+        final HttpServletRequest request)
+    {
+        //ADD
+    }
     
 }
