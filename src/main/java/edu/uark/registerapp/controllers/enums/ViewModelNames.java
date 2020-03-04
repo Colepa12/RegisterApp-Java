@@ -6,7 +6,7 @@ public enum ViewModelNames {
 	IS_ELEVATED_USER("isElevatedUser"),
 	PRODUCTS("products"), // Product listing
 	PRODUCT("product"), // Product detail
-	EMPLOYEE_TYPES("employeeTypes")
+	EMPLOYEE_TYPES("employeeTypes"),
 	EMPLOYEE("employee");
 	
 	public String getValue() {

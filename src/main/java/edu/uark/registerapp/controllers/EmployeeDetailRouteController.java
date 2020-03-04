@@ -1,29 +1,6 @@
 package edu.uark.registerapp.controllers;
 
 import java.util.Map;
-<<<<<<< HEAD
-
-import javax.servlet.http.HttpServletRequest;
-
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.bind.annotation.RequestParam;
-
-@Controller
-@RequestMapping(value = "/employeeDetail")
-public class EmployeeDetailRouteController
-{
-    @RequestMapping(method = RequestMethod.GET)
-    public ModelAndView start(
-        @RequestParam final Map<String, String> queryParameters, 
-        final HttpServletRequest request)
-    {
-        //ADD
-    }
-    
-=======
 import java.util.Optional;
 import java.util.UUID;
 
@@ -99,9 +76,9 @@ public class EmployeeDetailRouteController extends BaseRouteController {
 		} else if (!this.isElevatedUser(activeUserEntity.get())) {
 			return this.buildNoPermissionsResponse();
 		} else {
-			Employee employee = ((Object) this.employeeQuery).setRecordID(employeeId).execute();
+			//Employee employee = ((Object) this.employeeQuery).setRecordID(employeeId).execute();
 
-			ModelAndView modelandview = new ModelAndView(ViewNames.EMPLOYEE_DETAIL.getViewName().addObject(ViewModelNames.EMPLOYEE.getValue(), employee));
+			//ModelAndView modelandview = new ModelAndView(ViewNames.EMPLOYEE_DETAIL.getViewName().addObject(ViewModelNames.EMPLOYEE.getValue(), employee));
 		}
 		
 
@@ -114,7 +91,7 @@ public class EmployeeDetailRouteController extends BaseRouteController {
 	// Helper methods
 	private boolean activeUserExists() {
 		// TODO: Helper method to determine if any active users Exist
-		return this.activeEmployeeExistsQuery.isPresent();
+		//return this.activeEmployeeExistsQuery.isPresent()
+		return true;
 	}
->>>>>>> Initial changes for sprint 2 employee edit functionality, incomplete.
 }
